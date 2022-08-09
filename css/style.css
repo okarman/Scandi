@@ -237,6 +237,7 @@ body {
 
 .how-it-works {
     display: grid;
+    list-style-position: inside;
 }
 
 /* .how-it-works li::before {
@@ -246,6 +247,8 @@ body {
 .how-it-works li {
     width: 285px;
     grid-template-rows: auto;
+    
 }
 
 /* counter */
+
