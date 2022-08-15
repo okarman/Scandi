@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,42 +9,46 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>SCANDI</title>
 </head>
+
 <body>
     <header class="header"> 
         <div class="wrapper-wide">
             <div class="header-top">
                 <div class="header-logo">
                     <a href="#">
-                        <img src="/img/logo.png" width="26" height="25" alt="Логотип дизайнерской компании SCANDI">
-                        <img src="/img/SCANDI.png" width="62" height="13" alt="Логотип дизайнерской компании SCANDI">
+                        <img src="/img/logo.png" width="25" height="25" alt="Логотип компании SCANDI - изображени торшера">
+                        SCANDI
                     </a>
                 </div>
                 <nav>
-                    <ul class="menu-list">
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Портфолио</a></li>
-                        <li><a href="#">Команда</a></li>
-                        <li><a href="#">Как мы работаем</a></li>
-                        <li><a href="#">Отзывы клиентов</a></li>
-                        <li><a href="#">Оставить заявку</a></li>
+                    <ul class="nav-list">
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#projects">Портфолио</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#procces-list">Как мы работаем</a></li>
+                        <li><a href="#reviews">Отзывы клиентов</a></li>
+                        <li><a href="#form">Оставить заявку</a></li>
                     </ul>
                 </nav>
                 <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
             </div>
         </div>
-        <div class="wrapper-narrow">
-            <div class="header-content">
-                <h1 class="header-title"><a>Поможем сделать вашу квартиру уютнее</a></h1>
-                <p class="header-lead">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-                <a class="header-btn" href="#">Оставить заявку</a>
-            </div>
-        </div>
     </header>
 
     <main>
-        <section class="section about">
+        <section class="promo">
             <div class="wrapper-narrow">
-                <h1 class="section-title about-title">О нас</h1>
+                <div class="promo-content">
+                    <h1 class="main-title">Поможем сделать вашу квартиру уютнее</h1>
+                    <p class="promo-lead">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+                    <a class="promo-btn btn" href="#form">Оставить заявку</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="wrapper-narrow">
+                <h2 class="section-title about-title">О нас</h2>
                 <div class="about-container">
                     <div class="about-img">
                         <img src="/img/about.png" width="444" height="465" alt="Дизайнерский интерьер обеденнего стола">
@@ -65,9 +70,9 @@
             </div>
         </section>
 
-        <section class="section projects">
+        <section class="section projects" id="projects">
             <div class="wrapper-wide">
-                <h1 class="section-title projects-title">Наши работы</h1>
+                <h2 class="section-title projects-title">Наши работы</h2>
                 <div class="flex-container">
                     <div class="flex-item">
                         <div class="flex-container-mask">
@@ -111,9 +116,9 @@
             </div>
         </section>
 
-        <section class="section team">
+        <section class="section team" id="team">
             <div class="wrapper-narrow">
-                <h1 class="section-title">Команда</h1>
+                <h2 class="section-title">Команда</h2>
                 <ul class="team-list">
                     <li>
                         <img src="/img/Masha.png" width="320" height="253" alt="Портрет Маши, главный дизайнер">
@@ -131,6 +136,11 @@
                             как обустроить дом так, чтобы вам понравилось.</span>
                     </li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="procces-list" id="procces-list">
+            <div class="wrapper-narrow">
                 <h1 class="section-title">Как мы работаем</h1>
                 <ol class="how-it-works">
                     <li>
@@ -153,9 +163,9 @@
             </div>
         </section>
             
-        <section class="section reviews">
+        <section class="section reviews" id="reviews">
             <div class="wrapper-narrow">
-                <h1 class="section-title">Отзывы</h1>
+                <h2 class="section-title">Отзывы</h2>
                 <div class="review-slider">
                     <div class="review-list">
                         <div class="review-content">
@@ -181,10 +191,37 @@
                 </div>
             </div>
         </section>
+
+        <section class="form" id="form">
+            <div class="wrapper-wide">
+                <div class="form-container">
+                    <div class="form-content">
+                        <h2 class="section-title form-title">Оставить заявку</h2>
+                        <p>Оставьте свои контакты. Менеджер перезвонит
+                            в удобное вам время и ответит на все вопросы.</p>
+                        <form action="" method="get">
+                            <input type="text" name="username" id="name-field" value="Ваше имя">              
+                            <input type="text" name="userphone" id="phone-field" value="Введите телефон">
+                            <input type="submit" class="footer-btn btn" value="Оставить заявку">
+                        </form>
+                    </div>
+
+                    <div class="form-map">
+                        <img src="/img/map.png" width="590" height="624" alt="Карта с адресом офиса">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-
+        <div class="wrapper-wide">
+            <div class="footer-container">
+                <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
+                <span>г. Санкт-петербург, ул. Большая Конюшенная, 19</span>
+                <span>ИП Королёва А.А.</span>
+            </div>
+        </div>
     </footer>
 
 </body>

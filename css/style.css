@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -48,7 +66,12 @@ body {
     padding-top: 36px;
 }
 
-.menu-list {
+.header-logo a img {
+    position: relative;
+    top: 5px;
+}
+
+.nav-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -58,7 +81,7 @@ body {
     list-style: none;
 }
 
-.menu-list a,
+.nav-list li a,
 .header-logo a,
 .phone
  {
@@ -70,16 +93,17 @@ body {
     color: #533738;
 }
 
-.menu-list li:hover a,
+.nav-list li:hover a,
+.header-logo a:hover,
 .phone:hover {
     text-shadow: 1px 1px 3px #684b4c;
 }
 
-.header-content {
+.promo-content {
     padding-bottom: 168px;
 }
 
-.header-title {
+.main-title {
     width: 500px;
     margin: 0;
     margin-top: 90px;
@@ -88,11 +112,11 @@ body {
     font-weight: 400;
 }
 
-.header-lead {
+.promo-lead {
     width: 380px;
 }
 
-.header-btn {
+.btn {
     display: block;
     width: 310px;
     font-size: 20px;
@@ -105,7 +129,7 @@ body {
     background-color: #CC8B86;
 }
 
-.header-btn:hover {
+.promo-btn:hover {
     color: #ffffff;
 }
 
@@ -218,7 +242,7 @@ body {
     color: #533738;
 }
 
-.team {
+.team, .procces-list {
     background-color: #E2C4BA;
 }
 
@@ -234,6 +258,8 @@ body {
 .team-list li {
     width: 320px;
 }
+
+
 
 .how-it-works {
     display: grid;
@@ -332,4 +358,63 @@ body {
 
 .review-content cite {
     font-style: normal;
+}
+
+.form {
+    background-color: #8D7370;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 100%;
+    font: inherit;
+    color: #F6EDE9;
+    padding-top: 35px;
+}
+
+.footer-btn {
+    border: none;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 20px;
+
+    color: #ffffff;
+}
+
+.form-container p {
+    opacity: 0.6;
+}
+
+.form-content {
+    padding-top: 50px;
+}
+
+.form-content,
+.form-map {
+    width: 590px;
+}
+
+.form-map {
+    height: 624px;
+}
+
+.footer-btn {
+    margin-top: 30px;
+}
+
+.footer {
+    height: 105px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-top: 36px;
 }
