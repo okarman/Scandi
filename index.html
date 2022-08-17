@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/normalize">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/itc-slider.js" defer ></script>
     <title>SCANDI</title>
 </head>
 
@@ -14,20 +15,21 @@
     <header class="header"> 
         <div class="wrapper-wide">
             <div class="header-top">
-                <div class="header-logo">
-                    <a href="#">
-                        <img src="/img/logo.png" width="25" height="25" alt="Логотип компании SCANDI - изображени торшера">
+                <div class="logo">
+                    <a href="#" class="link">
+                        
+                        <img src="/img/logo.png" class="logo-img" width="25" height="25" alt="Логотип компании SCANDI - изображени торшера">
                         SCANDI
                     </a>
                 </div>
                 <nav>
                     <ul class="nav-list">
-                        <li><a href="#about">О компании</a></li>
-                        <li><a href="#projects">Портфолио</a></li>
-                        <li><a href="#team">Команда</a></li>
-                        <li><a href="#procces-list">Как мы работаем</a></li>
-                        <li><a href="#reviews">Отзывы клиентов</a></li>
-                        <li><a href="#form">Оставить заявку</a></li>
+                        <li><a href="#about" class="nav-item">О компании</a></li>
+                        <li><a href="#projects" class="nav-item">Портфолио</a></li>
+                        <li><a href="#team" class="nav-item">Команда</a></li>
+                        <li><a href="#procces-list" class="nav-item">Как мы работаем</a></li>
+                        <li><a href="#reviews" class="nav-item">Отзывы клиентов</a></li>
+                        <li><a href="#form" class="nav-item">Оставить заявку</a></li>
                     </ul>
                 </nav>
                 <a href="tel:+79818574624" class="phone">+7 (981) 857-46-24</a>
@@ -62,9 +64,9 @@
             <div class="about-bottom">
                 <div class="wrapper-narrow">
                     <ul class="about-list">
-                        <li>5 <br> лет работы</li>
-                        <li>100 <br> проектов</li>
-                        <li>10 <br> наград</li>
+                        <li class="about-item">5 <br> лет работы</li>
+                        <li class="about-item">100 <br> проектов</li>
+                        <li class="about-item">10 <br> наград</li>
                     </ul>
                 </div>
             </div>
@@ -120,17 +122,17 @@
             <div class="wrapper-narrow">
                 <h2 class="section-title">Команда</h2>
                 <ul class="team-list">
-                    <li>
+                    <li class="team-item">
                         <img src="/img/Masha.png" width="320" height="253" alt="Портрет Маши, главный дизайнер">
                         <span>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
                             и помогает сделать вашу квартиру красивой и уютной.</span>
                     </li>
-                    <li>
+                    <li class="team-item">
                         <img src="/img/Sasha.png" width="320" height="253" alt="Портрет Саши, менеджер">
                         <span>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
                             и ответит на все вопросы.</span>
                     </li>
-                    <li>
+                    <li class="team-item">
                         <img src="/img/Kate.png" width="320" height="253" alt="Портрет Кати, дизайнер">
                         <span>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает,
                             как обустроить дом так, чтобы вам понравилось.</span>
@@ -139,56 +141,77 @@
             </div>
         </section>
 
-        <section class="procces-list" id="procces-list">
-            <div class="wrapper-narrow">
-                <h1 class="section-title">Как мы работаем</h1>
-                <ol class="how-it-works">
-                    <li>
+        <section class="procces" id="procces">
+            <div class="wrapper-wide">
+                <h2 class="section-title">Как мы работаем</h2>
+                <ul class="procces-list">
+                    <li class="procces-item">
                         <span>Знакомимся, выезжаем
                             на объект, утверждаем концепцию, подписываем договор.</span>
                     </li>
-                    <li>
+                    <li class="procces-item">
                         <span>Подбираем мебель, текстиль, аксессуары. Делаем 3D-
                             визуализацию.</span>
                     </li>
-                    <li>
+                    <li class="procces-item">
                         <span>Находим нужные магазины, помогаем с доставкой
                             и оплатой товаров.</span>
                     </li>
-                    <li>
+                    <li class="procces-item">
                         <span>Воплощаем проект в жизнь:
                             расставляем мебель и цветы, вешаем шторы, находим места для мелочей</span>
                     </li>
-                </ol>
+                </ul>
             </div>
         </section>
             
         <section class="section reviews" id="reviews">
             <div class="wrapper-narrow">
                 <h2 class="section-title">Отзывы</h2>
-                <div class="review-slider">
-                    <div class="review-list">
-                        <div class="review-content">
-                            <blockquote>
-                                <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-                                    Работа шла быстро, было очень приятно общаться и взаимодествовать
-                                    с сотрудниками. Не ожидала, что это будет так легко!
-                                    Буду советовать и своим друзьям к вам обращаться!»</p>
-                                <cite>АННА БЕЛОВСКАЯ</cite>
-                            </blockquote>
+                    <div class="slider" data-slider="itc-slider" data-loop="true">
+                        <div class="slider__container">
+                            <div class="slider__wrapper">
+                                <div class="slider__items">
+                                    <div class="slider__item">
+                                        <div class="slider-content">
+                                            <div class="review-text">
+                                                <blockquote class="review-quote">
+                                                    <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+                                                        Работа шла быстро, было очень приятно общаться и взаимодействовать
+                                                        с сотрудниками. Не ожидала, что это будет так легко!
+                                                        Буду советовать и своим друзьям к вам обращаться!»</p>
+                                                    <cite class="review-autor">АННА БЕЛОВСКАЯ</cite>
+                                                </blockquote>
+                                            </div>
+                                            <div class="review-img">
+                                                <img src="/img/review_1.png" width="407" height="272" alt="Фото интерьера из отзыва">
+                                                <img src="/img/review_2.png" width="407" height="272" alt="Фото интерьера из отзыва">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__item">
+                                        <div class="slider-content">
+                                            <div class="review-text">
+                                                <blockquote class="review-quote">
+                                                    <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+                                                        Работа шла быстро, было очень приятно общаться и взаимодействовать
+                                                        с сотрудниками. Не ожидала, что это будет так легко!
+                                                        Буду советовать и своим друзьям к вам обращаться!»</p>
+                                                    <cite class="review-autor">АННА БЕЛОВСКАЯ</cite>
+                                                </blockquote>
+                                            </div>
+                                            <div class="review-img">
+                                                <img src="/img/review_1.png" width="407" height="272" alt="Фото интерьера из отзыва">
+                                                <img src="/img/review_2.png" width="407" height="272" alt="Фото интерьера из отзыва">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="review-img">
-                            <img src="/img/review_1.png" width="407" height="272" alt="Фото интерьера из отзыва">
-                            <img src="/img/review_2.png" width="407" height="272" alt="Фото интерьера из отзыва">
-                        </div>
+                        <button class="slider__control" data-slide="prev"></button>
+                        <button class="slider__control" data-slide="next"></button>
                     </div>
-                    <button type="button" class="slider-button slider-prev">
-                        <span class="visually-hidden">Предыдущий отзыв</span>
-                    </button>
-                    <button type="button" class="slider-button slider-next">
-                        <span class="visually-hidden">Следующий отзыв</span>
-                    </button>
-                </div>
             </div>
         </section>
 
@@ -197,11 +220,11 @@
                 <div class="form-container">
                     <div class="form-content">
                         <h2 class="section-title form-title">Оставить заявку</h2>
-                        <p>Оставьте свои контакты. Менеджер перезвонит
-                            в удобное вам время и ответит на все вопросы.</p>
                         <form action="" method="get">
-                            <input type="text" name="username" id="name-field" value="Ваше имя">              
-                            <input type="text" name="userphone" id="phone-field" value="Введите телефон">
+                            <p class="form-text">Оставьте свои контакты. Менеджер перезвонит
+                            в удобное вам время и ответит на все вопросы.</p>
+                            <input type="text" name="username" class="field" id="name-field" value="Ваше имя">              
+                            <input type="text" name="userphone" class="field" id="phone-field" value="Введите телефон">
                             <input type="submit" class="footer-btn btn" value="Оставить заявку">
                         </form>
                     </div>
