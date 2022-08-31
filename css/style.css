@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    width: 1400px;
+    /* width: 1400px; */
     margin: 0 auto;
     padding: 0;
     font-family: "Montserrat", sans-serif;
@@ -195,6 +195,10 @@ body {
     text-align: center;
 }
 
+.about-item p {
+    margin: 0;
+}
+
 .projects {
     padding-bottom: 60px;
 }
@@ -303,21 +307,20 @@ body {
 }
 
 .procces-item::before { 
-    display: block;
-    margin: 0 auto 20px auto;  
-    content: counter(li); 
-    counter-increment: li;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto; 
+    counter-increment: li; 
+    content: counter(li);
     height: 70px;
     width: 70px;
-    text-align: center;
-    vertical-align: middle;
     font-weight: 500;
     font-size: 30px;
     line-height: 70px;
 
     border-radius: 50%;
     background-color: #8D7370;
-    background-position: bottom;
     color: #ffffff; 
 }
 
@@ -428,12 +431,18 @@ body {
 }
 
 .form-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     color: #ffffff;
+}
+
+.form-title {
+    text-align: start;
+}
+
+.field::placeholder {
+    color: #F6EDE9;
 }
 
 .form-text {
@@ -441,16 +450,12 @@ body {
 }
 
 .form-content {
-    padding-top: 50px;
+    padding: 50px 20px 50px 82px;
 }
 
-.form-content,
-.form-map {
-    width: 590px;
-}
-
-.form-map {
-    height: 624px;
+.img-map {
+    height: 100%;
+    width: auto;
 }
 
 .footer-btn {
